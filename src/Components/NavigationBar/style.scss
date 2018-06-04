@@ -1,0 +1,70 @@
+@import "../../stylesheets/variables";
+
+nav {
+  height: 60px;
+  width: 100%;
+  background: #FFF;
+
+  .navContent {
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    padding: 0 2em;
+
+    .logo {
+      padding: 0 1em;
+      color: $gray;
+    }
+    
+    .logoSelected {
+      padding: 0 1em;
+    }
+
+    .logoLink {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.5em;
+      font-weight: 500;
+      transition: color 300ms ease-in-out;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.navLinks {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  height: 31px;
+
+  li {
+    list-style: none;
+    margin: 0 1em;
+    transition: border-bottom 200ms ease-in-out;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.selected {
+  border-bottom: 3px solid $blonded-yellow;
+  color: #34495e;
+}
+
+.regular {
+  color: $gray;
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid lighten($blonded-yellow, 15%);
+  }
+}

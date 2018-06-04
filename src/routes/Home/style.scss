@@ -1,0 +1,22 @@
+@import "../../stylesheets/variables";
+
+.home {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: relative;
+}
+.content {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  padding-left: 1em;
+  border-left: 4px solid $blonded-yellow;
+}
+.title {
+  margin: 0;
+  color: #34495e;
+}
+.subtitle {
+  font-weight: 400;
+  margin: 0;
+}
